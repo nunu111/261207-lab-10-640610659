@@ -27,7 +27,6 @@ export default function roomIdMessageRoute(req, res) {
     }
     //read request body
     const text = req.body.text;
-    console.log(text);
     if (typeof text !== "string")
       return res.status(404).json({ ok: false, message: "Invalid text input" });
     //create new id
